@@ -1,0 +1,15 @@
+.input {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.submit {
+    margin-top: 8px;
+    align-self: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    height: 67px;
+    background-color: var(--white);
+}
+
+.old {
+    text-decoration: line-through;
+    color: var(--blue-2);
+    margin-right: 8px;
+}
+
+.price {
+    margin-right: 8px;
+}
+
+.day {
+    margin-left: 8px;
+}

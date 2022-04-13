@@ -1,0 +1,37 @@
+.tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.td {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    padding-left: 16px;
+    height: 80px;
+}
+
+.tdBtn {
+    justify-content: flex-end;
+    padding-right: 16px;
+}
+
+.btn {
+    height: 34px;
+    width: 20px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./../../images/controls/blueVerticalDots.svg");
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.tdColspan2 {
+    flex-basis: 50%;
+}

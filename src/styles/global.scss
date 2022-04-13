@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: var(--wrapper-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 160px;
+}
+
+.white-block {
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--gray);
+  min-height: 100vh;
+  color: var(--blue);
+  overflow-x: hidden;
+  font-family: "GothamBook";
+  font-size: 14px;
+  line-height: 17px;
+
+  scroll-behavior: smooth;
+}
+
+.noScroll {
+  overflow: hidden !important;
+}
+
+.label {
+  color: var(--blue-50);
+  margin-bottom: 8px !important;
+  display: block;
+}

@@ -1,0 +1,296 @@
+.ant-input {
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.ant-form label {
+  font-size: 12px;
+}
+
+.ant-form-item {
+  margin-bottom: 0;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border-color: var(--blue);
+  border-width: 1px;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue);
+}
+
+.ant-form-item-has-error :not(.ant-input-disabled).ant-input,
+.ant-form-item-has-error
+  :not(.ant-input-affix-wrapper-disabled).ant-input-affix-wrapper,
+.ant-form-item-has-error :not(.ant-input-disabled).ant-input:hover,
+.ant-form-item-has-error
+  :not(.ant-input-affix-wrapper-disabled).ant-input-affix-wrapper:hover {
+  background-color: var(--red-50) !important;
+  border-color: var(--red);
+}
+
+.ant-form-item-explain.ant-form-item-explain-error {
+  color: var(--red);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 8px;
+  margin-bottom: -8px;
+}
+
+.ant-input {
+  background-color: inherit;
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: var(--blue);
+  box-shadow: none;
+}
+
+.anticon.ant-input-clear-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("./../images/controls/clearSearchBar.svg");
+  opacity: 0.25;
+  transition: 0.3s;
+  & svg {
+    display: none;
+  }
+  &:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+}
+
+.ant-input-suffix {
+  margin-right: 4px;
+}
+/*CHECKBOX*/
+.ant-checkbox-inner {
+  border-radius: 50%;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: var(--blue);
+}
+
+.ant-checkbox-checked::after {
+  border: none;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  border-width: 1px;
+}
+/*RADIO*/
+.ant-radio-checked .ant-radio-inner {
+  border-color: var(--blue) !important;
+}
+
+.ant-radio-inner {
+  width: 18px;
+  height: 18px;
+}
+
+.ant-radio-inner::after {
+  background-color: var(--blue);
+  width: 10px;
+  height: 10px;
+}
+
+.ant-radio-wrapper:hover .ant-radio,
+.ant-radio:hover .ant-radio-inner,
+.ant-radio-input:focus + .ant-radio-inner {
+  border-color: var(--blue);
+}
+
+.ant-radio-checked::after {
+  border: none;
+}
+
+.ant-radio-input:focus + .ant-radio-inner {
+  box-shadow: none;
+}
+
+.ant-radio-wrapper {
+  margin-right: 0;
+}
+
+/* DATE PICKER */
+
+.ant-picker {
+  border: none !important;
+}
+
+.ant-picker-header-super-next-btn,
+.ant-picker-header-super-prev-btn {
+  display: none !important;
+}
+
+.ant-picker:hover,
+.ant-picker-focused {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  background-color: var(--blue);
+}
+
+.ant-picker-content th {
+  height: 22px;
+  color: var(--blue-50) !important;
+}
+
+.ant-picker-content td {
+  min-width: 49px;
+  width: 49px;
+  height: 49px;
+  padding: 0 !important;
+}
+
+.ant-picker-date-panel .ant-picker-body {
+  padding: 0 16px 16px 16px !important;
+}
+
+.ant-picker-date-panel .ant-picker-content {
+  width: 375px;
+}
+
+.ant-picker-decade-panel,
+.ant-picker-year-panel,
+.ant-picker-quarter-panel,
+.ant-picker-month-panel,
+.ant-picker-week-panel,
+.ant-picker-date-panel,
+.ant-picker-time-panel {
+  width: 375px;
+}
+
+.ant-picker-cell-inner {
+  height: 49px !important;
+  width: 49px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-picker-body {
+  display: flex;
+}
+
+.ant-picker-footer {
+  display: none;
+}
+
+.ant-picker-header {
+  padding: 16px 16px 0 16px !important;
+  border-bottom: none !important;
+  line-height: 19px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-family: "GothamMedium";
+}
+
+.ant-picker-header-next-btn,
+.ant-picker-header-prev-btn {
+  & span {
+    display: none;
+  }
+
+  background-image: url("./../images/controls/calendarArrow.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.ant-picker-header-next-btn {
+  transform: scaleX(-1) !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border: none !important;
+}
+
+.ant-picker-cell-disabled::before {
+  background-color: transparent;
+}
+
+.ant-picker-cell-inner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ant-picker-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner,
+.ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end)
+  .ant-picker-cell-inner {
+    background-color: var(--blue-25);
+}
+
+.ant-picker-cell:active:not(.ant-picker-cell-in-view) .ant-picker-cell-inner,
+.ant-picker-cell:active:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end)
+  .ant-picker-cell-inner {
+    background-color: var(--blue-50);
+}
+
+/* SELECT */
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border: none;
+  box-shadow: none;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: none;
+  box-shadow: none;
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: none;
+  box-shadow: none;
+}
+
+.ant-select-selector {
+  height: 100% !important;
+}
+
+.ant-select-selection-item,
+.ant-select-selection-placeholder {
+  display: flex;
+  align-items: center;
+}
+
+.ant-checkbox-inner {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  transform: rotate(45deg) scale(1) translate(-40%, -60%);
+}
+
+/*INPUT NUMBER*/
+
+.ant-input-number-input-wrap {
+  width: 100%;
+}

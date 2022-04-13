@@ -1,0 +1,53 @@
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.item {
+    flex-basis: 34%;
+    margin-right: 16px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.input {
+    flex-grow: 2;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    background: rgba(225, 229, 233, 0.25);
+}
+
+.btn {
+    margin-left: 16px;
+    flex-shrink: 0;
+}
+
+.divider {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray-2);
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.closedDivider {
+    transform: rotate(180deg);
+}

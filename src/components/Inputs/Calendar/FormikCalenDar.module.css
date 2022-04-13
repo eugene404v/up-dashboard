@@ -1,0 +1,8 @@
+.calendar {
+    height: 49px;
+    background-color: var(--gray-2) !important;
+    border: none;
+    min-width: 300px;
+    flex-basis: 50%;
+}
+

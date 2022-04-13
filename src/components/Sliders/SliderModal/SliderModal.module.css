@@ -1,0 +1,32 @@
+.slide {
+    height: 645px;
+    background-color: var(--gray-2);
+    position: relative;
+    overflow: hidden;
+}
+
+.img {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+    height: 100%;
+    
+    overflow: hidden;
+}
+
+.modal {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: var(--wrapper-width);
+}
+
+.thumbs img {
+    width: 82.6px;
+}
+
+.thumbs {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+}

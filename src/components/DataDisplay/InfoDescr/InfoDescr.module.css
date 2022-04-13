@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.name {
+  color: var(--blue-50);
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.descr {
+  width: 50%;
+  flex-shrink: 0;
+}

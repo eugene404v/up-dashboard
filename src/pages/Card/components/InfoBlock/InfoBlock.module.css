@@ -1,0 +1,11 @@
+.container {
+    background-color: var(--white);
+    padding: 24px;
+    margin-bottom: 24px;
+    scroll-behavior: smooth;
+}
+
+
+.title {
+    margin-bottom: 24px;
+}

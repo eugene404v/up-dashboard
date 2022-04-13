@@ -1,0 +1,48 @@
+.container {
+    display: block;
+}
+
+.label {
+    margin-bottom: 8px;
+    color: var(--blue-50);
+    display: block;
+}
+
+.labelWhite {
+    color: var(--white-50);
+}
+
+.error {
+    margin-top: 8px;
+    color: red; /* TODO */
+}
+
+.input {
+    height: 49px;
+    background-color: var(--gray-2) !important;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    width: 100%;
+    border: none;
+}
+
+.input::placeholder {
+    color: var(--blue-25);
+}
+
+.inputWhite {
+    background-color: var(--white) !important;
+}
+
+.inputWhite::placeholder {
+    color: var(--black-25);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.required {
+    margin-left: 8px;
+}

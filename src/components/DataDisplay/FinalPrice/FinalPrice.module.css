@@ -1,0 +1,51 @@
+.container {
+    margin-bottom: 16px;
+}
+
+.container:last-child {
+    margin-bottom: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    height: 49px;
+    padding-left: 24px;
+}
+
+.price {
+    margin-left: auto;
+}
+
+.tip {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid var(--blue);
+    justify-content: center;
+    align-items: center;
+    margin-left: 9px;
+}
+
+.required {
+    margin-left: 40px;
+    color: var(--red);
+}
+
+.additional {
+    margin-left: 40px;
+    color: var(--blue-2);
+}
+
+.included {
+    margin-left: 40px;
+    color: var(--green);
+}

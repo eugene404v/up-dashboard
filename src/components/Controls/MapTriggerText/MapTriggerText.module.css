@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    display: block;
+    height: 24px;
+    width: 24x;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 16px;
+}
+
+.country {
+    opacity: .5;
+    margin-left: 8px;
+}
+
+.city {
+    color: var(--link) !important;
+    cursor: pointer;
+    text-decoration: underline;
+    max-width:  80%;
+}

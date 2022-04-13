@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+
+}
+
+.btn {
+    position: absolute;
+    display: none;
+    align-items: center;
+    height: 49px;
+    padding: 0 16px;
+    top: 0;
+    right: 49px;
+}
+
+.btn svg {
+    margin-right: 16px;
+}
+
+.btnDown {
+    top: 26px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.container:hover .btn {
+    display: flex;
+}

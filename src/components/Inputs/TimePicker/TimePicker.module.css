@@ -1,0 +1,24 @@
+.picker {
+    height: 49px;
+}
+
+.container {
+    width: 100%;
+    flex-basis: 50%;
+    margin-left: 16px;
+}
+
+.container :global(.ant-select-selector){
+    background-color: var(--gray-2) !important; 
+}
+
+.container :global(.ant-select-selection-search){
+    display: flex;
+    align-items: center;
+}
+
+
+
+.item {
+    padding: 16px !important;
+}

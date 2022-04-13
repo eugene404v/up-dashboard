@@ -1,0 +1,16 @@
+.thead {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 2px solid #F0F2F4;
+}
+
+.th {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding-left: 16px;
+    color: var(--blue-50);
+    flex-basis: 25%;
+    flex-shrink: 0;
+}

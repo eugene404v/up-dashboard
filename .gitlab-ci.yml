@@ -1,0 +1,58 @@
+image: docker:stable
+
+services:
+  - name: docker:18.09.7-dind
+    entrypoint: [ "env", "-u", "DOCKER_HOST" ]
+    command: [ "dockerd-entrypoint.sh" ]
+variables:
+  DOCKER_HOST: tcp://docker:2375
+
+stages:
+  - build
+  - deploy
+
+build:master:
+  stage: build
+  script:
+    - echo $CONFIG_MASTER > .env.production
+    - docker login -u $CI_DEPLOY_USER -p $CI_DEPLOY_PASSWORD $CI_REGISTRY
+    - docker build --pull --tag $CI_REGISTRY_IMAGE:master .
+    - docker push $CI_REGISTRY_IMAGE:master
+  only:
+    - master
+
+build:develop:
+  stage: build
+  script:
+    - echo ${CONFIG_DEV} > .env.production
+    - docker login -u $CI_DEPLOY_USER -p $CI_DEPLOY_PASSWORD $CI_REGISTRY
+    - docker build --pull --tag $CI_REGISTRY_IMAGE:develop .
+    - docker push $CI_REGISTRY_IMAGE:develop
+  only:
+    - develop
+
+deploy:master:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - chmod og= $ID_RSA
+    - apk update && apk add openssh-client
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker pull $CI_REGISTRY_IMAGE:master"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker rm -f pst-dashboard-master || true"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker run -d --name pst-dashboard-master -p 4500:5000 -v /var/local/pst/ssl:/var/local/pst/ssl $CI_REGISTRY_IMAGE:master"
+  only:
+    - master
+
+deploy:develop:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - chmod og= $ID_RSA
+    - apk update && apk add openssh-client
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker pull $CI_REGISTRY_IMAGE:develop"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker rm -f pst-dashboard-develop || true"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker run -d --name pst-dashboard-develop -p 4501:5000 -v /var/local/pst/ssl:/var/local/pst/ssl $CI_REGISTRY_IMAGE:develop"
+  only:
+    - develop

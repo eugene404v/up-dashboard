@@ -1,0 +1,123 @@
+.container {
+    background-color: var(--white);
+    padding: 24px;
+}
+
+.headline {
+    display: flex;
+    background-color: var(--white);
+    height: 144px;
+    margin-bottom: 40px;
+    margin-top: 24px;
+}
+
+.img {
+    overflow: hidden;
+    height: 100%;
+    width: 154px;
+    object-fit: cover;
+}
+
+.header {
+    margin-left: 16px;
+}
+
+.name {
+    margin-bottom: 16px;
+}
+
+.place {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.marina {
+    margin-left: 26px;
+}
+
+.requestState {
+    margin-left: 0 !important;
+    width: 185px !important;
+    margin-bottom: 24px !important;
+}
+
+.subtitle {
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+
+.subtitle:first-of-type {
+    margin-top: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    color: var(--blue-25);
+    margin-bottom: 8px;
+}
+
+.label span {
+    color: var(--blue-50);
+}
+
+.inputSm {
+    flex-basis: 33%;
+    margin-left: 16px;
+}
+
+.inputSm:nth-child(1) {
+    margin-left: 0;
+}
+
+.inputMed {
+    flex-basis: 50%;
+}
+
+.inputMed:nth-child(2) {
+    margin-left: 16px;
+}
+
+.comment {
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.addRow {
+    margin: 24px auto 32px auto;
+}
+
+.delRow {
+    margin-left: 16px;
+}
+
+.deleteContainer {
+    display: flex;
+    flex-basis: 33%;
+    margin-left: 16px;
+    align-items: flex-end;
+}
+
+.inputUnit {
+    flex-basis: 80%;
+}
+
+.btns {
+    display: flex;
+    margin-top: 24px;
+    justify-content: flex-end;
+}
+
+.btns a,
+.btns button {
+    margin-left: 24px;
+}

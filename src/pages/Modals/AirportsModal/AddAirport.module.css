@@ -1,0 +1,33 @@
+.modal {
+    width: 984px;
+    align-self: flex-start;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.wrapper {
+    padding: 40px 24px 0 24px;
+}
+
+.subtitle {
+    margin-bottom: 24px;
+}
+
+.input {
+    margin-bottom: 16px;
+}
+
+.address {
+    margin-bottom: 40px;
+}
+
+.owner {
+    margin-top: 40px;
+}
+
+.btns {
+    margin-top: 32px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}

@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    margin-bottom: 32px;
+    padding-right: 16px;
+}
+
+.name {
+    margin-bottom: 8px;
+    
+}
+
+.optional {
+    margin-top: 8px;
+}

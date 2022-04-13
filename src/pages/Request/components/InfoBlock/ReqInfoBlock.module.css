@@ -1,0 +1,13 @@
+.container {
+    background-color: var(--white);
+    padding-bottom: 32px;
+}
+
+.title {
+    background-color: var(--gray-2);
+    padding: 24px;
+}
+
+.children {
+    padding: 32px 24px 0 24px;
+}

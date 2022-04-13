@@ -1,0 +1,34 @@
+.list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.left {
+    flex-basis: 50%;
+}
+
+.price {
+    flex-basis: 50%;
+}
+
+.descr {
+    margin-top: 8px;
+    color: var(--blue-2);
+    max-width: 370px;
+}
+
+.divider {
+    margin-left: 5px;
+    margin-right: 5px;
+}

@@ -1,0 +1,24 @@
+.bg {
+    background-color: var(--blue);
+}
+
+.container {
+    width: var(--wrapper-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 24px 0;
+}
+
+.input {
+    height: 60px;
+}
+
+.inputContainer {
+    flex-grow: 10;
+}
+
+.submit {
+    flex-shrink: 0;
+    width: 202px;
+}

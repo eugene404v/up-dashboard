@@ -1,0 +1,31 @@
+.container {
+   display: flex;
+}
+
+.price {
+    margin-left: -16px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 0 16px;
+    background-color: var(--blue);
+    min-width: 130px;
+}
+
+.old {
+    color: var(--blue-2);
+    font-size: 14px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.discount {
+    margin-left: 8px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 0 16px;
+    background-color: var(--gold);
+}

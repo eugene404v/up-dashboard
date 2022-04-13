@@ -1,0 +1,6 @@
+.btn {
+    width: 49px;
+    height: 49px;
+    flex-basis: 49px;
+    flex-shrink: 0;
+}

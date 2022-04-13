@@ -1,0 +1,33 @@
+.modal {
+    width: 984px;
+    min-height: calc(100vh - 64px);
+}
+
+.addBtn {
+    padding-left: 0 !important;
+    transition: .3s;
+}
+
+.addBtn:hover img {
+    opacity: 0.7;
+    transition: .3s;
+}
+
+.search {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.list {
+    overflow-y: scroll;
+    max-height: 610px;
+}
+
+.deleting {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}

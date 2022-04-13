@@ -1,0 +1,32 @@
+.textarea {
+    background-color: var(--gray-2) !important;
+    max-height: 200px !important;
+    min-height: 82px !important;
+    resize: vertical;
+    padding: 16px 12px 32px 12px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.container {
+    position: relative;
+}
+
+.counter {
+    position: absolute;
+    right: 12px;
+    bottom: 16px;
+    color: var(--blue-25);
+    pointer-events: none;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--blue-50);
+}
+
+:global(.ant-form-item-has-error) .textarea {
+    background-color: var(--red-50) !important;
+    border: 1px solid var(--red) !important;
+}

@@ -1,0 +1,37 @@
+.swiper-pagination-fraction {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 60px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transition: .3s;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0.3;
+    transition: .3s;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: var(--white-25);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url("./../images/controls/arrowSwiperToLeft.svg");
+
+    &:after {
+        display: none;
+    }
+}
+
+.swiper-button-next {
+    transform: scaleX(-1);
+}

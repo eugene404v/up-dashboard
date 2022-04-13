@@ -1,0 +1,207 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    transition: .3s;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "GothamMedium";
+    letter-spacing: 0.02em;
+}
+
+.btn:hover {
+    background-color: var(--blue-hover);
+    transition: .3s;
+    color: var(--white);
+}
+
+.btn:active {
+    background-color: var(--blue-pressing);
+    transition: .3s;
+}
+
+.small {
+    height: 32px;
+    padding: 0 16px;
+}
+
+.medium {
+    height: 49px;
+    padding: 0 32px;
+}
+
+.large {
+    height: 60px;
+    padding: 0 44px;
+}
+
+.wide {
+    height: 49px;
+    width: 100%;
+}
+
+.blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.blue:hover {
+    background-color: var(--blue-hover);
+}
+
+.blue:active {
+    background-color: var(--blue-pressing);
+}
+
+.orange {
+    background-color: var(--gold);
+    color: var(--white);
+}
+
+.orange:hover {
+    background-color: var(--gold-hover);
+}
+
+.orange:active {
+    background-color: var(--gold-pressing);
+}
+
+.gray {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.gray:hover {
+    background-color: var(--blue-hover);
+}
+
+.gray:active {
+    background-color: var(--blue-pressing);
+}
+
+.light {
+    background-color: var(--gray-2);
+    color: var(--blue);
+}
+
+.light:hover {
+    background-color: var(--blue-hover);
+    color: var(--white);
+}
+
+.light:active {
+    background-color: var(--blue-pressing);
+    color: var(--white);
+}
+
+.text {
+    background-color: transparent;
+    color: var(--blue);
+}
+
+.text:hover {
+    color: var(--blue-hover);
+    background-color: transparent;
+}
+
+.text:active {
+    color: var(--blue-pressing);
+    background-color: transparent;
+}
+
+.empty {
+    background-color: transparent;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.empty:hover {
+    color: var(--blue-hover);
+    background-color: transparent;
+    border: 2px solid var(--blue-hover);
+}
+
+.empty:active {
+    color: var(--blue-pressing);
+    background-color: transparent;
+    border: 2px solid var(--blue-pressing);
+}
+
+.white {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.white:hover {
+    background-color: var(--blue-hover);
+    color: var(--white);
+}
+
+.white:active {
+    background-color: var(--blue-pressing);
+    color: var(--white);
+}
+
+.whiteText {
+    background-color: transparent;
+    color: var(--white);
+}
+
+.whiteText:hover {
+    background-color: transparent;
+    color: var(--blue-hover);
+}
+
+.whiteText:active {
+    background-color: transparent;
+    color: transparent;
+}
+
+.whiteEmpty {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.whiteEmpty:hover {
+    background-color: transparent;
+    color: var(--blue-hover);
+    border: 2px solid var(--blue-hover);
+}
+
+.whiteEmpty:active {
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid transparent;
+}
+
+.red {
+    background-color: transparent;
+    color: var(--red);
+    opacity: 1;
+}
+
+.red:hover {
+    background-color: transparent;
+    color: var(--red);
+    opacity: 0.7;
+}
+
+.red:active {
+    background-color: transparent;
+    color: var(--red);
+    opacity: 0.5;
+}
+
+.btn:disabled {
+    color: var(--white-50) !important;
+}
+
+.prefix {
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+}

@@ -1,0 +1,22 @@
+.request {
+    margin: 0 auto 32px auto;
+    width: 246px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accepted {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.archived {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.pending {
+    background-color: var(--gray-2);
+}

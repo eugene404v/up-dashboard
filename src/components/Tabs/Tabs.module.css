@@ -1,0 +1,9 @@
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+    background-color: var(--white);
+    flex-grow: 1;
+    color: var(--blue);
+}

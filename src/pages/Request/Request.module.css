@@ -1,0 +1,88 @@
+.bread {
+    margin-bottom: 24px !important;
+}
+
+.title {
+    margin-bottom: 16px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right {
+    flex-shrink: 0;
+    flex-basis: 278px;
+    flex-grow: 0;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 16px;
+}
+
+.right button,
+.right a {
+    margin-bottom: 16px;
+}
+
+.left {
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 884px;
+}
+
+.headline {
+    display: flex;
+    background-color: var(--white);
+    height: 172px;
+    margin-bottom: 24px;
+}
+
+.img {
+    overflow: hidden;
+    height: 100%;
+    width: 184px;
+    object-fit: cover;
+}
+
+.header {
+    margin-top: 24px;
+    margin-left: 16px;
+}
+
+.name {
+    margin-bottom: 16px;
+}
+
+.place {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.marina {
+    margin-left: 26px;
+}
+
+.requestState {
+    margin-left: 0;
+    width: 185px;
+    margin-bottom: 24px;
+}
+
+.details {
+    margin-bottom: 24px;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comment {
+    flex-basis: 100%;
+    margin-bottom: 0;
+    margin-top: 16px;
+}

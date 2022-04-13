@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 49px;
+}
+
+.label {
+    margin-left: 22px;
+    cursor: pointer;
+}

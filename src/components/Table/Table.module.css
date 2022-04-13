@@ -1,0 +1,23 @@
+.title {
+    color: var(--blue);
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.container {
+    padding: 24px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.addBtn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}

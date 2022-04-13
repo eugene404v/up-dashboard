@@ -1,0 +1,25 @@
+.check {
+    opacity: 0 !important;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.span {
+    display: flex;
+    padding: 16px;
+    background-color: var(--gray-2);
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+:global(.ant-checkbox-wrapper-checked) + .span {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.list {
+    display: flex !important;
+    flex-wrap: wrap;
+}

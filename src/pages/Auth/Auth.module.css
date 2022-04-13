@@ -1,0 +1,37 @@
+.bg {
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+    background-image: url("./../../images/bg/auth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 646px;
+    box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(0, 0, 0, 0.12);
+    background-color: var(--blue);
+}
+
+.title {
+    height: 126px;
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+    align-items: flex-start;
+    background-color: var(--white);
+    width: 100%;
+    margin-top: -1px;
+}
+
+.container {
+    padding: 32px 16px;
+}
+
+.input {
+    margin-bottom: 24px;
+}

@@ -1,0 +1,25 @@
+.filter {
+    width: 279px;
+    background-color: var(--white);
+    min-height: 300px;
+    padding: 16px;
+    position: sticky;
+    top: 16px;
+    flex-shrink: 0;
+}
+
+.title {
+    margin-bottom: 24px;
+}
+
+.subtitle {
+    margin-bottom: 16px;
+}
+
+.radios {
+    margin-bottom: 24px !important;
+}
+
+.radiosLast {
+    margin-bottom: 0 !important;
+}

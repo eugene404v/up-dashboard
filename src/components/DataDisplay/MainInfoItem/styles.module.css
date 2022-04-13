@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 100%;
+    padding-right: 60px;
+}
+
+.container:last-child {
+    margin-bottom: 0;
+}
+
+.icon {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    margin-left: 16px;
+    margin-right: auto;
+}

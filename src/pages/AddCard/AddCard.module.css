@@ -1,0 +1,116 @@
+.page {
+    background-color: var(--white);
+    padding: 24px;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.subtitle {
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.subtitleNoMt {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navLink {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    background-color: var(--gray-2);
+    color: var(--blue)
+}
+
+.navLink:first-child {
+    margin-right: 8px;
+}
+
+.navLink:hover,
+.navLinkActive {
+    background-color: var(--blue);
+    color: var(--white)
+}
+
+.row {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+.inputLg {
+    flex-basis: 100% !important; 
+}
+
+.inputMed {
+    flex-basis: 100% !important;
+}
+
+.inputMed:nth-child(2) {
+    margin-left: 16px;
+}
+
+.counter {
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+.counter:first-child {
+    margin-left: 0;
+}
+
+.addRow {
+    margin: 24px auto 32px auto;
+}
+
+.delRow {
+    margin-left: 16px;
+}
+
+.deleteContainer {
+    display: flex;
+    flex-basis: 33%;
+    margin-left: 16px;
+    align-items: flex-end;
+}
+
+.inputUnit {
+    flex-basis: 80% !important;
+}
+
+.inputSm {
+    flex-basis: 33%;
+    margin-left: 16px;
+}
+
+.inputSm:nth-child(1) {
+    margin-left: 0;
+}
+
+.btns {
+    display: flex;
+    position: absolute;
+    bottom: -72px;
+    right: 0;
+}
+
+.btns a,
+.btns button {
+    margin-left: 24px;
+}
+
+.textareaBottom {
+    margin-bottom: 16px;
+}

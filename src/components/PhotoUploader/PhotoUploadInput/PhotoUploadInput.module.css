@@ -1,0 +1,17 @@
+.label {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: var(--gray-2);
+    cursor: pointer;
+    background-image: url("./../../../images/controls/plusBlue.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.input {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    position: absolute;
+}

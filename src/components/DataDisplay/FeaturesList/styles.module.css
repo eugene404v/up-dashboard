@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 24px;
+}
+
+.container:last-child {
+    margin-right: 0;
+}
+
+.title {
+    margin-bottom: 12px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.item {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.item:before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: var(--blue);
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}

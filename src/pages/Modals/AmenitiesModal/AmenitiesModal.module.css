@@ -1,0 +1,31 @@
+.modal {
+    width: 984px;
+    height: calc(100vh - 64px);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.input {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    height: 49px;
+    padding: 0 16px;
+}
+
+.add svg {
+    margin-right: 16px;
+}
+
+.list {
+    overflow: scroll;
+    height: calc(100vh - 250px);
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}

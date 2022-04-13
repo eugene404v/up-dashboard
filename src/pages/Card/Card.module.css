@@ -1,0 +1,94 @@
+.title {
+    margin-bottom: 16px;
+}
+
+.place {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.marina {
+    margin-left: 26px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right {
+    flex-shrink: 0;
+    flex-basis: 278px;
+    flex-grow: 0;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 16px;
+}
+
+.right button,
+.right a {
+    margin-bottom: 16px;
+}
+
+.left {
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 884px;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.price {
+    margin-bottom: 24px;
+}
+
+.mainInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mainInfo > div {
+    flex-basis: 48%;
+}
+
+.cabins {
+    display: flex;
+}
+
+.features {
+    display: flex;
+}
+
+.descr {
+    width: 100%;
+    max-width: 884px;
+}
+
+.descr p {
+    margin-bottom: 16px;
+}
+
+.descr p:last-child {
+    margin-bottom: 0;
+}
+
+.descr b, .descr strong {
+    font-weight: 500;
+    font-family: "GothamMedium";
+}
+
+.time {
+    margin-bottom: 16px;
+}
+
+.timeHint {
+    color: var(--blue-2);
+}

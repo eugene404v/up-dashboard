@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.svg {
+    margin-right: 8px;
+}
+
+.name {
+    color: var(--link);
+    text-decoration: underline;
+}
